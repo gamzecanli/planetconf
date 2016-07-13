@@ -1,0 +1,6 @@
+<form action="{% url 'planet:tarih_yaz'%}" method="POST">
+{% csrf_token %}
+    <button type="submit">Dosyaya_Yaz </button>
+    {{ yazdimi }}
+
+</form>

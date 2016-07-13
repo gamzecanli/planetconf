@@ -1,0 +1,4 @@
+<form action="{% url 'planet:index'%}" method="POST">
+    {% csrf_token %}
+    <button type="submit">dosya olustur </button>
+</form>

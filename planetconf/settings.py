@@ -121,3 +121,32 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
 
 STATIC_URL = '/static/'
+
+
+planet_conf_template="""
+[Planet]
+name = ##planet_name##
+link = ##link##
+cache_directory = ##planet_directory_name##/cache
+new_feed_items = 100
+log_level = DEBUG
+feed_timeout = 20
+template_files = ##planet_directory_name##/fancy/index.html.tmpl ##planet_directory_name##/atom.xml.tmpl ##planet_directory_name##/rss20.xml.tmpl ${Planet Directory Name}/rss10.xml.tmpl ${Planet Directory Name}/opml.xml.tmpl ${Planet Directory Name}/foafroll.xml.tmpl
+output_dir = ##planet_directory_name##/output
+items_per_page = 0
+days_per_page = 10
+date_format = %B %d, %Y %I:%M %p
+new_date_format = %B %d, %Y
+encoding = utf-8
+[##planet_directory_name##/fancy/index.html.tmpl]
+days_per_page = 0
+activity_threshold = 0
+
+[DEFAULT]
+facewidth = 65
+faceheight = 85
+
+###CUSTOM CONFIGURATION
+[##blogger_link##]
+name = ##blogger_name##
+"""

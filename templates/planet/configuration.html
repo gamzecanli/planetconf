@@ -1,0 +1,5 @@
+    <form method="POST" action="{% url "planet:configuration" %}" class="post-form">{% csrf_token %}
+        {{ planet_form.as_p }}
+        {{ blogger_form.as_p }}
+        <button type="submit" class="save btn btn-default">Save</button>
+    </form>

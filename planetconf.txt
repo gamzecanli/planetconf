@@ -1,19 +1,19 @@
 
 [Planet]
-name = gamze planet222
-link = gamze.com222
-cache_directory = planetdir222/cache
+name = gamze planet
+link = gamze.com
+cache_directory = planetdir/cache
 new_feed_items = 100
 log_level = DEBUG
 feed_timeout = 20
-template_files = planetdir222/fancy/index.html.tmpl planetdir222/atom.xml.tmpl planetdir222/rss20.xml.tmpl ${Planet Directory Name}/rss10.xml.tmpl ${Planet Directory Name}/opml.xml.tmpl ${Planet Directory Name}/foafroll.xml.tmpl
-output_dir = planetdir222/output
+template_files = planetdir/fancy/index.html.tmpl planetdir/atom.xml.tmpl planetdir/rss20.xml.tmpl ${Planet Directory Name}/rss10.xml.tmpl ${Planet Directory Name}/opml.xml.tmpl ${Planet Directory Name}/foafroll.xml.tmpl
+output_dir = planetdir/output
 items_per_page = 0
 days_per_page = 10
 date_format = %B %d, %Y %I:%M %p
 new_date_format = %B %d, %Y
 encoding = utf-8
-[planetdir222/fancy/index.html.tmpl]
+[planetdir/fancy/index.html.tmpl]
 days_per_page = 0
 activity_threshold = 0
 
@@ -22,31 +22,5 @@ facewidth = 65
 faceheight = 85
 
 ###CUSTOM CONFIGURATION
-[gamze.blogspot.com222]
-name = gamze222
-
-[Planet]
-name = gamze planet43234
-link = gamze.com222
-cache_directory = planetdir222/cache
-new_feed_items = 100
-log_level = DEBUG
-feed_timeout = 20
-template_files = planetdir222/fancy/index.html.tmpl planetdir222/atom.xml.tmpl planetdir222/rss20.xml.tmpl ${Planet Directory Name}/rss10.xml.tmpl ${Planet Directory Name}/opml.xml.tmpl ${Planet Directory Name}/foafroll.xml.tmpl
-output_dir = planetdir222/output
-items_per_page = 0
-days_per_page = 10
-date_format = %B %d, %Y %I:%M %p
-new_date_format = %B %d, %Y
-encoding = utf-8
-[planetdir222/fancy/index.html.tmpl]
-days_per_page = 0
-activity_threshold = 0
-
-[DEFAULT]
-facewidth = 65
-faceheight = 85
-
-###CUSTOM CONFIGURATION
-[gamze.blogspot.com222]
-name = gamze222
+[gamze.blogspot.co]
+name = gamze2
